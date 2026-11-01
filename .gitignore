@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------------------
+# Copyrighted source material
+# ---------------------------------------------------------------------------
+# The Yeh & Hsu (2018) article is published by Elsevier and is not ours to
+# redistribute. It is read from docs/paper/ locally; see docs/paper/README.md
+# for how to obtain it.
+docs/paper/*.pdf
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Tooling
+# ---------------------------------------------------------------------------
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------------------
+# OS
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---------------------------------------------------------------------------
+# Scratch
+# ---------------------------------------------------------------------------
+data/processed/*
+!data/processed/.gitkeep
+*.log
+
+# ---------------------------------------------------------------------------
+# Original supplied copies, kept on disk but not committed
+# ---------------------------------------------------------------------------
+# The dataset lives in data/raw/; the PDFs are described in docs/paper/README.md.
+21 real-estate valuation/
+/Real estate valuation data set.xlsx

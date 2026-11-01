@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: >-
+  A Python replication of Yeh & Hsu (2018), "Building real estate valuation
+  models with comparative approach through case-based reasoning"
+message: Please cite the original article; this repository is a replication.
+type: software
+license: MIT
+repository-code: https://github.com/Skecon/qca-real-estate-replication
+abstract: >-
+  An end-to-end replication of the Quantitative Comparative Approach of Yeh and
+  Hsu (2018) on the Sindian circle of the UCI Real Estate Valuation data set,
+  with the paper's hedonic benchmarks, repeated-split significance testing, and
+  an exhaustive test of the decomposition sequence the authors listed as future
+  work.
+keywords:
+  - real estate valuation
+  - case-based reasoning
+  - hedonic price model
+  - replication
+references:
+  - type: article
+    title: >-
+      Building real estate valuation models with comparative approach through
+      case-based reasoning
+    authors:
+      - family-names: Yeh
+        given-names: I-Cheng
+      - family-names: Hsu
+        given-names: Tzu-Kuang
+    journal: Applied Soft Computing
+    volume: 65
+    start: 260
+    end: 271
+    year: 2018
+    doi: 10.1016/j.asoc.2018.01.029

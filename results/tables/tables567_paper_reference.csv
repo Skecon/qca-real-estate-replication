@@ -1,0 +1,4 @@
+,20% error hit rate,10% error hit rate,R2,RMSE,Avg. house price,RMSE/Avg. house price
+Quantitative Comparative Approach,80.2,52.9,0.683,7.73,37.98,0.204
+Multivariate regression analysis,74.3,41.8,0.53,8.65,37.98,0.228
+Neural network (paper spec),78.0,48.8,0.627,8.06,37.98,0.212

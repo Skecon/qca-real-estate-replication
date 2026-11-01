@@ -1,0 +1,5 @@
+,Coefficient a,Coefficient b,Coefficient of determination,Root of mean square error
+Distance to the nearest MRT station,-0.23843,2.527609,0.882,0.081076
+Number of convenience stores in the living circle on foot,0.009452,0.955591,0.283,0.018765
+House age,-0.06408,1.159766,0.5238,0.036351
+Transaction date,0.2117,-20.6248,0.7283,0.013932

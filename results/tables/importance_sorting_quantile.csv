@@ -1,0 +1,5 @@
+factor,label,variance,root_variance,rank
+mrt,Distance to the nearest MRT station,1082.700954436766,32.90442150284314,1
+stores,Number of convenience stores in the living circle on foot,718.9754142243046,26.81371690430673,2
+age,House age,376.61188158517984,19.406490707626144,3
+date,Transaction date,129.38357279060293,11.374690008549813,4

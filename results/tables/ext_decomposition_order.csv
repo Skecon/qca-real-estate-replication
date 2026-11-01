@@ -1,0 +1,25 @@
+,order,RMSE,is paper order
+0,mrt > date > stores > age,7.2988563837034155,False
+1,mrt > stores > date > age,7.299629175914148,False
+2,mrt > stores > age > date,7.3009572849709725,True
+3,mrt > age > date > stores,7.306768745737287,False
+4,mrt > date > age > stores,7.308299556852703,False
+5,mrt > age > stores > date,7.308873307934446,False
+6,date > mrt > stores > age,7.389967533590729,False
+7,date > mrt > age > stores,7.414680706730689,False
+8,age > mrt > date > stores,7.748033739002508,False
+9,age > mrt > stores > date,7.749092960683159,False
+10,age > date > mrt > stores,7.916156127402013,False
+11,date > age > mrt > stores,7.967779584603848,False
+12,age > stores > date > mrt,8.539556925514995,False
+13,age > date > stores > mrt,8.548734565432213,False
+14,date > age > stores > mrt,8.555000875991293,False
+15,stores > date > age > mrt,8.566238788112784,False
+16,stores > age > date > mrt,8.569269806700076,False
+17,age > stores > mrt > date,8.569397284932075,False
+18,date > stores > age > mrt,8.576476626582949,False
+19,stores > date > mrt > age,8.6050797490702,False
+20,stores > age > mrt > date,8.608516485594649,False
+21,date > stores > mrt > age,8.61226961504937,False
+22,stores > mrt > date > age,8.645603105302161,False
+23,stores > mrt > age > date,8.665622754645955,False

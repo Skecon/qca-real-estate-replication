@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qca-real-estate-replication"
+version = "1.0.0"
+description = "Replication of Yeh & Hsu (2018), Applied Soft Computing 65, 260-271"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.0",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "matplotlib>=3.8",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+notebooks = ["jupyter>=1.0", "nbformat>=5.9", "nbclient>=0.9"]
+dev = ["pytest>=7.4"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 88
+src = ["src", "tests", "scripts"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = [
+    # Fitting a curve family that cannot converge on a given set of portion
+    # points is an expected outcome, not an error to handle: the family is
+    # simply dropped from the comparison.
+    "B017",
+    # The zipped sequences here are axes against a fixed list of factors, and
+    # they are the same length by construction.
+    "B905",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# This file holds the notebooks' source as string literals. Wrapping them to 88
+# columns would wrap the code inside the generated cells, where it is read.
+"scripts/build_notebooks.py" = ["E501"]
